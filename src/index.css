@@ -1,13 +1,9 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800&family=Exo:ital,wght@0,300;0,400;1,300&family=Kanit:ital,wght@0,200;0,300;1,200&family=Shantell+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+body {
+font-family: 'Cairo', sans-serif;
+
 }
