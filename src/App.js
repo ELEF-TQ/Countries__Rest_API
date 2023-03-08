@@ -8,7 +8,7 @@ function App() {
   return (
    <BrowserRouter>
      <Routes>
-       <Route path="/" element={<Countries/>} ></Route>
+       <Route path="/Countries__Rest_API" element={<Countries/>} ></Route>
        <Route path="/:name" element={<CountryDetails/>}></Route>
      </Routes>
    </BrowserRouter>
