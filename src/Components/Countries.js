@@ -36,10 +36,12 @@ const Countries = () => {
         const res = await fetch('https://restcountries.com/v3.1/all')
         const data = await res.json()
         setCountries(data)
+        console.log(Object.keys(data[0].currencies))
       }catch(error){
         console.error(error)
       }
     }
+    
     getCountries()
   },[])
 
@@ -115,7 +117,7 @@ return (
 
       {/*Countries*/}
       {countries ? (
-        <section className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 justify-items-center' >
+        <section className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 justify-items-center bg-gray-200' >
           {countries.map((country)=> (
             <CountryCard key={country.name.common} {...country}/>
           ))}

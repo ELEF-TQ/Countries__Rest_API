@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const CountryCard = ({flags , name,capital,subregion,population}) => {
+const CountryCard = ({flags , name,capital,region,population}) => {
   return (
     
        <div className="hover:bg-gray-100 max-w-sm  m-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-2xl hover:scale-105  duration-300 grid-cols-3 ">
@@ -10,8 +10,7 @@ const CountryCard = ({flags , name,capital,subregion,population}) => {
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name.official}</h5>
                 <ul>
                     <li className="mb-3 font-normal text-gray-700 dark:text-gray-400"><span className='font-bold'>Capital :</span> {capital}</li>
-                    <li className="mb-3 font-normal text-gray-700 dark:text-gray-400"><span className='font-bold'>Subregion :</span> {subregion}</li>
-                    <li className="mb-3 font-normal text-gray-700 dark:text-gray-400"><span className='font-bold'>Population :</span> {population}</li>   
+                    <li className="mb-3 font-normal text-gray-700 dark:text-gray-400"><span className='font-bold'>region :</span> {region}</li>
                 </ul>
                 <div className="flex justify-end">
                 <Link to={`/${name.official}`}>
